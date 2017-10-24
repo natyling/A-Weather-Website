@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+<!-----Nataly.Ling 000766302----->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+<title>Nataly.Ling-acmeform</title>
+ <link rel="stylesheet" type="text/css" href="acme.css">
+ </head>
+
+<body>
+<div id="one">
+<br><br><br><br><img src="acmeform.gif">
+</div>
+<div id="two">
+<form action="http://nexus.mohawkcollege.ca/courses/info10110/showit.pl" method="post">
+
+
+<fieldset>
+<legend>Personal Information</legend>
+
+<table>
+ 
+<tr>
+<td>Full Name:</td>
+<td><input type="text" name="full name" size="30" id="full name"required></td>
+</tr>
+
+   
+<tr>
+<td>E-mail address:</td>
+<td><input type="email" name="email" size="30"  maxlength="20"required></td>
+</tr> 
+
+
+<tr>
+<td>Street Address:</td>
+<td><input type="text" name="street address" size="30" maxlength="20"></td>
+</tr>
+
+  
+<tr>
+<td>Postal Code,enter as A0A 0A0:</td>
+<td><input type="text" name="postal code" size="10" pattern="[A-Za-z][0-9][A-Za-z][0-9][A-Za-z][0-9]"></td>
+</tr>
+</table>
+</fieldset>
+
+ 
+
+
+<fieldset>
+
+<legend>Product Order</legend>
+
+<p>Select product(s)to purchase: </p>
+<select name="Select product(s)to purchase:" multiple="multiple">
+	<option value="" >Please select</option>
+	<option value="Storm Cloud">Storm Cloud</option>
+	<option value="Dust Cloud">Dust Cloud</option>
+	<option value="Cyclone">Cyclone</option>
+	<option value="Rain Cloud">Rain Cloud</option>
+</select>
+<br>
+<p>
+     Your province of cloud operation: 
+     <select name="Region">               
+<optgroup label="Western Provinces">
+                <option value=" British Columbia ">British Columbia</option>
+                <option value=" Alberta ">Alberta</option>
+                <option value=" Saskatchewan ">Saskatchewan</option>
+</optgroup>
+<optgroup label="Central Provinces">
+                <option value=" Manitoba ">Manitoba</option>
+                <option value=" Ontario " selected="selected">Ontario</option>
+                <option value=" Quebec ">Quebec</option>
+</optgroup>
+<optgroup label="Eastern Provinces">
+                <option value=" New Brunswick ">New Brunswick</option>
+                <option value=" Price Edward Island ">Price Edward Island</option>
+                <option value=" Nova Scotia ">Nova Scotia</option>
+                <option value=" NewFoundland ">NewFoundland</option>
+</optgroup>
+
+<optgroup label="Territories">
+                <option value=" Price Edward Island ">Northwest Territories</option>
+                <option value=" Nunavut ">Nunavut</option>
+                <option value=" Yukon ">Yukon</option>
+</optgroup> </select></p>
+<br>
+<p>
+
+Select your option(s) you would like:<br>
+<input type="checkbox" name="option" value="Carrying case">Carrying case
+<input type="checkbox" name="option" value="Extended water capacity">Extended water capacity
+<input type="checkbox" name="option" value="Matching Umbrella">Matching Umbrella
+</p>
+<br>
+<p>
+Choose you method of payment:<br>
+<input type="radio" name="payment" value="Visa">Visa
+<input type="radio" name="payment" value="Master card" checked>Master Card
+<input type="radio" name="payment" value="American Express" >American Express
+</p>
+
+<p>Comments and suggestion:<br>
+<textarea rows="6" cols="40" name="message"></textarea>
+<input type="image" id ="nat" src= "submit.gif" alt= "submit"></p>
+</fieldset>
+</form>
+</div>
+</body>
+</html>

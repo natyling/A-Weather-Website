@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+<title>Form to contact us</title>
+<style type="text/css">
+
+input,select,textarea   {
+		border: 1px solid blue ;
+		background-color: lightblue;}
+label			{
+		padding-right: 5px ;}
+form			{
+		background-color:lightgray ;
+		border: 2px solid gray ;
+		font-family: arial, sans-serif ; 
+		padding: 10px ;}
+textarea		{
+		overflow: auto ; }
+legend			{
+		font-size: 16pt ;
+		color: darkblue;
+		font-weight: bold ;
+		padding-top: 10px ; }
+fieldset		{
+		border-width: 2px ;
+		border-color: darkblue ;
+		border-style: solid ;
+		margin-bottom: 10px ; }	
+input#submit		{
+		margin-left:10px ; }
+input:required:invalid
+                                      {background: #fff url(invalid.png) no-repeat 98% center;
+                                        box-shadow: 0 0 5px #d452252;
+                                        border-color: #b03535; }
+input:required:valid
+                                      {background: #fff url(valid.png) no-repeat 98% center;
+                                        box-shadow: 0 0 5px #5cd053;
+                                        border-color: #28921f; }
+</style>
+</head>
+
+<body>
+<h1>Contact Us</h1>
+
+<p>You can use this form to send email to the tutor of your choice. You are required to enter your name and email address, in case the person you're writing would like to reply. Enter your phone number if you want the person to respond by phone.</p>
+
+<p>Email is downloaded each evening and given to the recipients each morning. We will do our best to have the tutor reply within the same day.</p>
+
+<form method="post" action="http://nexus.mohawkcollege.ca/courses/info10110/showit.pl">
+
+<fieldset>
+<legend>Personal Information</legend>
+<p><label for="yourname">Your Name:</label><br><input type="text" name="yourname" id="yourname" size="25" required></p>
+<p><label for="email">Your E-mail:</label><br><input type="email" name="email" id="email" size="25" required></p>
+<p><label for="phone">Your Phone, enter as 123-456-7890:</label><br><input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" name="phone" id="phone" size="25"></p>
+</fieldset>
+
+<fieldset>
+<legend>Query Information</legend>
+<p><label for="recipient">Who is this message for?</label><br>
+<input type="text" name="recipient" id="recipient" size="25" required></p>
+
+<p>Course(s) of study:</p>
+<input type="checkbox" name="course" value="stats">Web Statistics<br>
+<input type="checkbox" name="course" value="graphics">Web Graphics<br>
+<input type="checkbox" name="course" value="math">Basic Math<br>
+
+<p>What type of help do you need?</p>
+<select name="type">
+       <option value="clarify">Clarify what the problem is asking for</option>
+       <option value="syntax">Help with specific syntax</option>
+       <option value="error">Meaning of diagnostic error</option>
+       <option value="theory">Theory type question</option>
+</select>
+
+<p><label for="message">Your Message:</label><br>
+<textarea rows="10" cols="50" name="message" id="message"></textarea></p>
+
+<p>Would you like a response?<br />
+<input type="radio" name="response" value="none">No response necessary<br>
+<input type="radio" name="response" value="email" checked>E-mail me back, please<br>
+<input type="radio" name="response" value="phone">Give me a call when you can</p>
+</fieldset>
+
+<input type="submit" value="Send Message" />
+
+</form>
+
+</body>
+</html>

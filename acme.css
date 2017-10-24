@@ -1,0 +1,97 @@
+
+/*Nataly Ling 000766302*/
+body {
+       background: url(skystrip2.gif) ;
+	   color:white;
+	   
+}
+
+#two  {
+       font-family: arial, sans-serif ; 
+	   padding: 10px ;
+	   width:60%;
+}
+		
+#one   {
+       float:left;
+}
+#three{
+	  background-color:#ead7da;
+}		
+		
+input:required:invalid
+                                      {background: #fff url(invalid.png) no-repeat 98% center;
+                                        box-shadow: 0 0 5px #d452252;
+                                        border-color: #b03535; }
+input:required:valid
+                                      {background: #fff url(valid.png) no-repeat 98% center;
+                                        box-shadow: 0 0 5px #5cd053;
+                                        border-color: #28921f; }
+legend {
+        border: 2px solid white;
+		background-color: gray;
+        
+
+}
+table    {width: 100%; }
+        tr          {vertical-align: top; }
+        td          {padding: 5px; }
+        .fixed    { width: 130px; }
+		
+		
+img.centered
+		{ 
+		display:block ;
+		margin-left:auto ;
+		margin-right:auto ;
+		}
+p.c	
+		{ 
+		text-align: center ;
+		font-size: 14pt ;
+		} 
+fieldset{
+		margin:0 0 25px 105px;
+}	
+h2, h3 , h4{
+	
+    	background-color:gray;
+	    border: 2px solid white;
+	    text-align: center;
+	    
+	    
+}
+#nat {
+	 background-color:lightgray;
+}
+
+nav {
+	
+	float: left;
+	height: 80vh;
+	width: 20%;
+	
+}
+nav a {
+	color: white;
+	text-decoration:none;
+}
+nav a:hover {
+	color: white;
+text-decoration: underline;
+}
+
+#five {
+	width: 70%;
+    height: 700px;
+	overflow:hidden;
+	border-style:none;
+	margin-left:80px;
+}
+::-webkit-scrolbar{
+	display:none;
+}
+#x {
+	background-color: white;
+
+}

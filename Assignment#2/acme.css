@@ -1,0 +1,17 @@
+img.centered
+		{ 
+		display:block ;
+		margin-left:auto ;
+		margin-right:auto ;
+		}
+	   p.c	
+		{ 
+		text-align: center ;
+		font-size: 14pt ;
+		} 
+		
+		table    {width: 100%; }
+        tr          {vertical-align: top; }
+        td          {padding: 5px; }
+        .fixed    { width: 130px; }
+		
